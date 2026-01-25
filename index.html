@@ -14,6 +14,7 @@
         .text-gradient { background: linear-gradient(to right, #60a5fa, #34d399); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         #network-canvas { position: fixed; top: 0; left: 0; z-index: -1; opacity: 0.3; }
         .hover-card:hover { transform: translateY(-10px); border-color: var(--accent); transition: all 0.4s ease; }
+        .profile-img { border: 4px solid rgba(59, 130, 246, 0.5); box-shadow: 0 0 30px rgba(59, 130, 246, 0.3); }
         input, textarea { background: rgba(30, 41, 59, 0.5) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: white !important; }
     </style>
 </head>
@@ -33,87 +34,148 @@
         </div>
     </nav>
 
-    <section id="about" class="min-h-screen flex flex-col items-center justify-center text-center px-6 pt-20">
+    <section id="about" class="min-h-screen flex flex-col items-center justify-center text-center px-6 pt-32">
+        <div class="relative mb-8" data-aos="zoom-in">
+            <img src="Gemini_Generated_Image_x51fqjx51fqjx51f.png" alt="Zabeeb Zaliz" class="w-40 h-40 md:w-52 md:h-52 rounded-full object-cover profile-img mx-auto">
+            <div class="absolute -bottom-2 right-1/2 translate-x-1/2 bg-blue-600 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Available</div>
+        </div>
+        
         <h2 class="text-blue-400 font-mono mb-4" data-aos="fade-down">>> Python Django & GenAI Developer</h2>
-        <h1 class="text-6xl md:text-8xl font-black mb-6 leading-tight" data-aos="zoom-in">Zabeeb Zaliz S</h1>
-        <p class="max-w-2xl text-slate-400 text-lg md:text-xl mb-10" data-aos="fade-up">
-            Bridging robust backend engineering with intelligent systems. Experienced in <b>Django ORM</b> [cite: 7] and high-performance deployment[cite: 8]. Currently pursuing <b>Advanced Data Science & GenAI</b>.
+        <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight" data-aos="zoom-in">Zabeeb Zaliz S</h1>
+        <p class="max-w-2xl text-slate-400 text-lg mb-10" data-aos="fade-up">
+            Python Django Backend Developer with experience in building and deploying scalable web applications[cite: 47]. Currently specializing in <b>Data Science & GenAI</b> to bridge the gap between clean code and intelligence.
         </p>
         <div class="flex gap-4" data-aos="fade-up">
             <a href="https://linkedin.com/in/zabeebzaliz" target="_blank" class="p-4 glass rounded-2xl hover-card"><i data-lucide="linkedin"></i></a>
             <a href="https://github.com/zabeebzaliz" target="_blank" class="p-4 glass rounded-2xl hover-card"><i data-lucide="github"></i></a>
+            <a href="mailto:szabeebzaliz7@gmail.com" class="p-4 glass rounded-2xl hover-card"><i data-lucide="mail"></i></a>
+        </div>
+    </section>
+
+    <section id="projects" class="max-w-6xl mx-auto py-24 px-6">
+        <h2 class="text-4xl font-bold mb-16 text-center" data-aos="fade-up">Detailed Projects</h2>
+        <div class="grid md:grid-cols-2 gap-10">
+            <div class="glass p-8 rounded-[2.5rem] hover-card" data-aos="fade-right">
+                <div class="flex justify-between items-start mb-6">
+                    <div class="p-3 bg-blue-500/20 rounded-2xl text-blue-400"><i data-lucide="globe"></i></div>
+                    <span class="text-xs font-mono text-slate-500">AWS | Render | Gunicorn</span>
+                </div>
+                <h3 class="text-2xl font-bold mb-3">Deployed Django Portfolio</h3>
+                <p class="text-sm text-slate-400 mb-6">Designed and deployed a production-ready Django portfolio application[cite: 63]. Configured Gunicorn as the WSGI server and WhiteNoise for static file handling to ensure high performance on the Render cloud platform[cite: 64, 65].</p>
+                <a href="https://portfolio-woy7.onrender.com/" target="_blank" class="text-blue-400 font-bold text-sm inline-flex items-center gap-2">Live Demo <i data-lucide="external-link" class="w-4 h-4"></i></a>
+            </div>
+
+            <div class="glass p-8 rounded-[2.5rem] hover-card" data-aos="fade-left">
+                <div class="flex justify-between items-start mb-6">
+                    <div class="p-3 bg-purple-500/20 rounded-2xl text-purple-400"><i data-lucide="network"></i></div>
+                    <span class="text-xs font-mono text-slate-500">Django ORM | Bootstrap</span>
+                </div>
+                <h3 class="text-2xl font-bold mb-3">Doobiz Networking Platform</h3>
+                <p class="text-sm text-slate-400 mb-6">Developed backend features with Django models and views[cite: 68]. Implemented authentication, authorization, and optimized search/filter functionality, reducing response times by 30% through advanced ORM query optimization[cite: 69, 70].</p>
+            </div>
+
+            <div class="glass p-8 rounded-[2.5rem] hover-card col-md-span-2" data-aos="fade-up">
+                <div class="flex justify-between items-start mb-6">
+                    <div class="p-3 bg-emerald-500/20 rounded-2xl text-emerald-400"><i data-lucide="shopping-cart"></i></div>
+                    <span class="text-xs font-mono text-slate-500">HTML | CSS | JavaScript</span>
+                </div>
+                <h3 class="text-2xl font-bold mb-3">Painting E-Selling Website</h3>
+                <p class="text-sm text-slate-400 mb-6">Built a responsive e-commerce frontend featuring product listings and dynamic pricing[cite: 73]. Enhanced UI responsiveness, boosting user engagement by 25% and designing the structure for future Django backend integration.</p>
+            </div>
         </div>
     </section>
 
     <section id="skills" class="max-w-6xl mx-auto py-24 px-6">
-        <h2 class="text-4xl font-bold mb-16 text-center" data-aos="fade-up">Technical Proficiency</h2>
+        <h2 class="text-4xl font-bold mb-16 text-center" data-aos="fade-up">Technical Arsenal</h2>
         <div class="grid md:grid-cols-2 gap-16">
             <div class="space-y-8" data-aos="fade-right">
                 <div>
-                    <div class="flex justify-between mb-2"><span class="text-sm font-bold">Django & Python Backend</span><span class="text-blue-400">95%</span></div>
+                    <div class="flex justify-between mb-2">
+                        <span class="text-sm font-bold">Backend (Python, Django, REST)</span>
+                        <span class="text-blue-400">95%</span>
+                    </div>
                     <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
                         <div class="bg-blue-500 h-full" style="width: 95%"></div>
                     </div>
                 </div>
                 <div>
-                    <div class="flex justify-between mb-2"><span class="text-sm font-bold">Cloud Deployment (AWS/Render)</span><span class="text-emerald-400">85%</span></div>
+                    <div class="flex justify-between mb-2">
+                        <span class="text-sm font-bold">Cloud Deployment (AWS, Render)</span>
+                        <span class="text-emerald-400">85%</span>
+                    </div>
                     <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
                         <div class="bg-emerald-500 h-full" style="width: 85%"></div>
                     </div>
                 </div>
                 <div>
-                    <div class="flex justify-between mb-2"><span class="text-sm font-bold">Data Science & GenAI</span><span class="text-purple-400">75%</span></div>
+                    <div class="flex justify-between mb-2">
+                        <span class="text-sm font-bold">Data Science & GenAI</span>
+                        <span class="text-purple-400">75%</span>
+                    </div>
                     <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
                         <div class="bg-purple-500 h-full" style="width: 75%"></div>
                     </div>
                 </div>
             </div>
+
             <div class="glass p-8 rounded-3xl" data-aos="fade-left">
-                <h3 class="text-xl font-bold mb-4">Professional Experience</h3>
-                <p class="text-blue-400 text-sm mb-1">Foxdale Pvt. Ltd. (Intern/Junior) [cite: 35, 36]</p>
-                <p class="text-slate-400 text-sm">Developed backend modules and optimized ORM queries, reducing response times by 30%[cite: 29, 38].</p>
+                <h3 class="text-xl font-bold mb-4 flex items-center gap-2">
+                    <i data-lucide="briefcase" class="text-blue-400"></i> Industry Experience
+                </h3>
+                <p class="text-blue-400 font-bold mb-1">Foxdale Pvt. Ltd., Trivandrum [cite: 77]</p>
+                <p class="text-xs text-slate-500 mb-4">Python Developer Intern | Jul 2025 – Dec 2025 [cite: 76, 78]</p>
+                <ul class="text-sm text-slate-400 space-y-2">
+                    <li>• Developed backend modules using Python and Django[cite: 79].</li>
+                    <li>• Followed clean code practices and Git-based workflows[cite: 79].</li>
+                    <li>• Optimized ORM queries for production environments[cite: 79].</li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="max-w-6xl mx-auto py-24 px-6">
-        <h2 class="text-4xl font-bold mb-16 text-center" data-aos="fade-up">Selected Projects</h2>
-        <div class="grid md:grid-cols-2 gap-10">
-            <div class="glass p-8 rounded-[2.5rem] hover-card" data-aos="fade-up">
-                <h3 class="text-2xl font-bold mb-2">Doobiz Platform [cite: 25]</h3>
-                <p class="text-slate-400 text-sm mb-4">Business networking platform with optimized search/filter functionality[cite: 25, 28].</p>
-                <div class="flex gap-2">
-                    <span class="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs">Django ORM [cite: 26]</span>
-                </div>
+    <section id="education" class="max-w-6xl mx-auto py-24 px-6">
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="glass p-8 rounded-3xl" data-aos="fade-up">
+                <h4 class="text-blue-400 font-mono mb-2">Technical Education</h4>
+                <p class="font-bold">Diploma in Computer Application Software [cite: 81]</p>
+                <p class="text-sm text-slate-500">LBS Institute of Technology, Kerala [cite: 81]</p>
             </div>
-            <div class="glass p-8 rounded-[2.5rem] hover-card" data-aos="fade-up" data-aos-delay="100">
-                <h3 class="text-2xl font-bold mb-2">Cloud Portfolio [cite: 19]</h3>
-                <p class="text-slate-400 text-sm mb-4">Production-ready Django app with Gunicorn and WhiteNoise[cite: 20, 23].</p>
-                <a href="https://portfolio-woy7.onrender.com/" class="text-emerald-400 text-xs font-bold">LIVE PREVIEW [cite: 21]</a>
+            <div class="glass p-8 rounded-3xl" data-aos="fade-up" data-aos-delay="100">
+                <h4 class="text-emerald-400 font-mono mb-2">Academic Foundation</h4>
+                <p class="font-bold">B.Sc Biochemistry [cite: 82]</p>
+                <p class="text-sm text-slate-500">T.K.M. College of Arts and Science [cite: 82]</p>
             </div>
         </div>
     </section>
 
     <section id="contact" class="max-w-4xl mx-auto py-24 px-6">
         <div class="glass p-10 md:p-16 rounded-[3rem]" data-aos="fade-up">
-            <h2 class="text-4xl font-bold mb-8 text-center">Get In Touch</h2>
-            <form action="https://formspree.io/f/mvzappyz" method="POST" class="space-y-6">
-                <input type="text" name="name" placeholder="Name" required class="w-full p-4 rounded-xl">
-                <input type="email" name="email" placeholder="Email" required class="w-full p-4 rounded-xl">
-                <textarea name="message" rows="4" placeholder="Message" required class="w-full p-4 rounded-xl"></textarea>
-                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-500 py-4 rounded-xl font-bold">Send Message</button>
+            <h2 class="text-4xl font-bold mb-8 text-center">Let's Connect</h2>
+            <form action="https://formspree.io/f/YOUR_ID_HERE" method="POST" class="space-y-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <input type="text" name="name" placeholder="Full Name" required class="w-full p-4 rounded-xl">
+                    <input type="email" name="email" placeholder="Email Address" required class="w-full p-4 rounded-xl">
+                </div>
+                <textarea name="message" rows="4" placeholder="How can I help you?" required class="w-full p-4 rounded-xl"></textarea>
+                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-500 py-4 rounded-xl font-bold transition-all transform hover:scale-[1.02]">Send Message</button>
             </form>
+            <div class="mt-8 text-center text-sm text-slate-400">
+                <p>📍 Trivandrum, Kerala, India [cite: 44]</p>
+                <p>📞 +91 75949 39676 [cite: 44]</p>
+            </div>
         </div>
     </section>
 
     <footer class="py-12 text-center text-slate-500 text-sm">
-        <p>© 2026 Zabeeb Zaliz S. | Trivandrum, Kerala [cite: 3]</p>
+        <p>© 2026 Zabeeb Zaliz S. | Built with Django & GenAI Passion</p>
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({ duration: 1000, once: true });
         lucide.createIcons();
+
+        // Background Animation (Neural Network)
         const canvas = document.getElementById('network-canvas');
         const ctx = canvas.getContext('2d');
         let pts = [];
@@ -134,5 +196,4 @@
         window.onresize=init; init(); draw();
     </script>
 </body>
-
 </html>
