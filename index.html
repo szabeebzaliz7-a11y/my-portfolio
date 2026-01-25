@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zabeeb Zaliz | Python & GenAI Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        :root { --accent: #3b82f6; }
+        body { background-color: #020617; color: #e2e8f0; font-family: 'Inter', sans-serif; overflow-x: hidden; scroll-behavior: smooth; }
+        .glass { background: rgba(15, 23, 42, 0.7); backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .text-gradient { background: linear-gradient(to right, #60a5fa, #34d399); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        #network-canvas { position: fixed; top: 0; left: 0; z-index: -1; opacity: 0.3; }
+        .hover-card:hover { transform: translateY(-10px); border-color: var(--accent); transition: all 0.4s ease; }
+        input, textarea { background: rgba(30, 41, 59, 0.5) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: white !important; }
+    </style>
+</head>
+<body>
+
+    <canvas id="network-canvas"></canvas>
+
+    <nav class="fixed top-0 w-full z-50 glass border-b border-white/5">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <span class="font-black tracking-tighter text-2xl uppercase">ZZ<span class="text-blue-500">.</span></span>
+            <div class="hidden md:flex gap-8 text-sm font-medium">
+                <a href="#about" class="hover:text-blue-400 transition">About</a>
+                <a href="#projects" class="hover:text-blue-400 transition">Projects</a>
+                <a href="#skills" class="hover:text-blue-400 transition">Skills</a>
+                <a href="#contact" class="text-blue-400 font-bold">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="about" class="min-h-screen flex flex-col items-center justify-center text-center px-6 pt-20">
+        <h2 class="text-blue-400 font-mono mb-4" data-aos="fade-down">>> Python Django & GenAI Developer</h2>
+        <h1 class="text-6xl md:text-8xl font-black mb-6 leading-tight" data-aos="zoom-in">Zabeeb Zaliz S</h1>
+        <p class="max-w-2xl text-slate-400 text-lg md:text-xl mb-10" data-aos="fade-up">
+            Bridging robust backend engineering with intelligent systems. Experienced in <b>Django ORM</b> [cite: 7] and high-performance deployment[cite: 8]. Currently pursuing <b>Advanced Data Science & GenAI</b>.
+        </p>
+        <div class="flex gap-4" data-aos="fade-up">
+            <a href="https://linkedin.com/in/zabeebzaliz" target="_blank" class="p-4 glass rounded-2xl hover-card"><i data-lucide="linkedin"></i></a>
+            <a href="https://github.com/zabeebzaliz" target="_blank" class="p-4 glass rounded-2xl hover-card"><i data-lucide="github"></i></a>
+        </div>
+    </section>
+
+    <section id="skills" class="max-w-6xl mx-auto py-24 px-6">
+        <h2 class="text-4xl font-bold mb-16 text-center" data-aos="fade-up">Technical Proficiency</h2>
+        <div class="grid md:grid-cols-2 gap-16">
+            <div class="space-y-8" data-aos="fade-right">
+                <div>
+                    <div class="flex justify-between mb-2"><span class="text-sm font-bold">Django & Python Backend</span><span class="text-blue-400">95%</span></div>
+                    <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+                        <div class="bg-blue-500 h-full" style="width: 95%"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex justify-between mb-2"><span class="text-sm font-bold">Cloud Deployment (AWS/Render)</span><span class="text-emerald-400">85%</span></div>
+                    <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+                        <div class="bg-emerald-500 h-full" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex justify-between mb-2"><span class="text-sm font-bold">Data Science & GenAI</span><span class="text-purple-400">75%</span></div>
+                    <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+                        <div class="bg-purple-500 h-full" style="width: 75%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="glass p-8 rounded-3xl" data-aos="fade-left">
+                <h3 class="text-xl font-bold mb-4">Professional Experience</h3>
+                <p class="text-blue-400 text-sm mb-1">Foxdale Pvt. Ltd. (Intern/Junior) [cite: 35, 36]</p>
+                <p class="text-slate-400 text-sm">Developed backend modules and optimized ORM queries, reducing response times by 30%[cite: 29, 38].</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="max-w-6xl mx-auto py-24 px-6">
+        <h2 class="text-4xl font-bold mb-16 text-center" data-aos="fade-up">Selected Projects</h2>
+        <div class="grid md:grid-cols-2 gap-10">
+            <div class="glass p-8 rounded-[2.5rem] hover-card" data-aos="fade-up">
+                <h3 class="text-2xl font-bold mb-2">Doobiz Platform [cite: 25]</h3>
+                <p class="text-slate-400 text-sm mb-4">Business networking platform with optimized search/filter functionality[cite: 25, 28].</p>
+                <div class="flex gap-2">
+                    <span class="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs">Django ORM [cite: 26]</span>
+                </div>
+            </div>
+            <div class="glass p-8 rounded-[2.5rem] hover-card" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-2xl font-bold mb-2">Cloud Portfolio [cite: 19]</h3>
+                <p class="text-slate-400 text-sm mb-4">Production-ready Django app with Gunicorn and WhiteNoise[cite: 20, 23].</p>
+                <a href="https://portfolio-woy7.onrender.com/" class="text-emerald-400 text-xs font-bold">LIVE PREVIEW [cite: 21]</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="max-w-4xl mx-auto py-24 px-6">
+        <div class="glass p-10 md:p-16 rounded-[3rem]" data-aos="fade-up">
+            <h2 class="text-4xl font-bold mb-8 text-center">Get In Touch</h2>
+            <form action="https://formspree.io/f/YOUR_ID_HERE" method="POST" class="space-y-6">
+                <input type="text" name="name" placeholder="Name" required class="w-full p-4 rounded-xl">
+                <input type="email" name="email" placeholder="Email" required class="w-full p-4 rounded-xl">
+                <textarea name="message" rows="4" placeholder="Message" required class="w-full p-4 rounded-xl"></textarea>
+                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-500 py-4 rounded-xl font-bold">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="py-12 text-center text-slate-500 text-sm">
+        <p>© 2026 Zabeeb Zaliz S. | Trivandrum, Kerala [cite: 3]</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+        lucide.createIcons();
+        const canvas = document.getElementById('network-canvas');
+        const ctx = canvas.getContext('2d');
+        let pts = [];
+        function init() {
+            canvas.width = window.innerWidth; canvas.height = window.innerHeight;
+            pts = []; for(let i=0; i<60; i++) pts.push({x:Math.random()*canvas.width, y:Math.random()*canvas.height, vx:(Math.random()-0.5)*0.5, vy:(Math.random()-0.5)*0.5});
+        }
+        function draw() {
+            ctx.clearRect(0,0,canvas.width,canvas.height); ctx.strokeStyle='#3b82f6'; ctx.lineWidth=0.2;
+            pts.forEach((p,i)=>{
+                p.x+=p.vx; p.y+=p.vy; if(p.x<0||p.x>canvas.width) p.vx*=-1; if(p.y<0||p.y>canvas.height) p.vy*=-1;
+                for(let j=i+1; j<pts.length; j++){
+                    let d = Math.hypot(p.x-pts[j].x, p.y-pts[j].y);
+                    if(d<150){ ctx.globalAlpha=1-d/150; ctx.beginPath(); ctx.moveTo(p.x,p.y); ctx.lineTo(pts[j].x,pts[j].y); ctx.stroke(); }
+                }
+            }); requestAnimationFrame(draw);
+        }
+        window.onresize=init; init(); draw();
+    </script>
+</body>
+</html>
